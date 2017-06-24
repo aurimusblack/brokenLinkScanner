@@ -1,0 +1,6 @@
+modules required :
+
+beautifulsoup
+urllib2
+requests
+sys
