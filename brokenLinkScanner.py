@@ -9,6 +9,8 @@ def crawl(p): #function to check for broken links of a particular *webpage*
 	soup = BeautifulSoup(html_page)
 	for link in soup.findAll("a"):  # crawling the <a> tags for links
 		x = link.get("href")
+		if x == None:
+			continue
 		if 'https' in x:   	# filtering out the links
 			# print x : debug mode
 			links.append(x)
